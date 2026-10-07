@@ -2,8 +2,8 @@
 // formEndpoint: your Formspree form URL, e.g. "https://formspree.io/f/abcdwxyz"
 // goatcounter:  your GoatCounter code, e.g. "autopredict" (-> autopredict.goatcounter.com)
 const CONFIG = {
-  formEndpoint: "",
-  goatcounter: ""
+  formEndpoint: "https://formspree.io/f/myekknvn",
+  goatcounter: "imabf"
 };
 // -------------------------------------------------------------------------
 
