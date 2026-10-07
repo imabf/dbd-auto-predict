@@ -23,8 +23,8 @@ h1{font-size:clamp(2rem,7vw,3.2rem);color:var(--bone)}
 h2{font-size:1.6rem;color:var(--bone)}
 h3{font-size:1.15rem;margin-bottom:.2em}
 p{margin:0 0 1em}
-a{color:var(--blood)}
-a:hover{color:#ff6a70}
+a{color:#ff7a80}
+a:hover{color:#fff}
 :focus-visible{outline:3px solid var(--bone);outline-offset:2px}
 section{padding:36px 0}
 
