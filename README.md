@@ -32,7 +32,7 @@ Deletion requests use the same endpoint. They arrive with subject "DELETION REQU
 4. In `index.html`, make sure the `og:image`, `og:url` and `twitter:image` tags use that real URL (already done for this deployment).
 5. Check the share preview with a link-preview tool or by pasting the URL into Discord.
 
-Nothing has been pushed or published yet.
+Published at https://imabf.github.io/dbd-auto-predict/ (repo: imabf/dbd-auto-predict).
 
 ## Decision rule
 
