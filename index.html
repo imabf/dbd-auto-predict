@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto-Predict: Twitch Predictions that resolve themselves</title>
+<meta name="description" content="A planned desktop tool for Dead by Daylight streamers: it spots the results screen, resolves your Twitch Prediction, and shows a live stats overlay. In development. Join the waitlist.">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Replace YOUR-USERNAME and REPO after deploying (see README) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Auto-Predict: Twitch Predictions that resolve themselves">
+<meta property="og:description" content="In development: a tool that spots your DBD results screen and resolves your Twitch Prediction for you. Waitlist open.">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/REPO/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/REPO/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auto-Predict: Twitch Predictions that resolve themselves">
+<meta name="twitter:description" content="In development: a tool that spots your DBD results screen and resolves your Twitch Prediction for you. Waitlist open.">
+<meta name="twitter:image" content="https://YOUR-USERNAME.github.io/REPO/og-image.png">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="logo" aria-label="Auto-Predict"><svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg> Auto-Predict</span>
+    <span class="badge">In development</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" id="top">
+    <p class="eyebrow">For Dead by Daylight streamers</p>
+    <h1>Stop resolving your Predictions by hand.</h1>
+    <p class="lead">Auto-Predict is a desktop app we want to build. It watches your screen, spots the end-of-match result, and resolves your Twitch Prediction for you.</p>
+    <p class="honest"><strong>Not built yet.</strong> This page is a waitlist to find out if streamers actually want it.</p>
+
+    <form id="waitlist" class="card" action="#" method="post" novalidate>
+      <h2 class="form-title">Join the waitlist</h2>
+      <label for="email">Email <span class="req">(required)</span></label>
+      <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+
+      <label for="channel">Twitch channel <span class="opt">(optional)</span></label>
+      <input id="channel" name="twitch_channel" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="your_channel_name" maxlength="40">
+
+      <label for="role">Which describes you?</label>
+      <select id="role" name="role" required>
+        <option value="streamer">Streamer</option>
+        <option value="viewer">Viewer</option>
+        <option value="mod">Mod</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- honeypot: real people never see or fill this -->
+      <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+      <button type="submit" class="btn" id="submit">Put me on the list</button>
+      <p class="consent">We store your email (and channel, if you add it) only to tell you when this exists or ask a question about it. No spam, no selling. <a href="#privacy">Delete my data</a>.</p>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="wrap" id="how">
+    <h2>How it would work</h2>
+    <ol class="steps">
+      <li>
+        <span class="n">1</span>
+        <div><h3>It watches your screen</h3><p>Like OBS does. It looks at the picture only. No game memory, no game files.</p></div>
+      </li>
+      <li>
+        <span class="n">2</span>
+        <div><h3>It spots the result</h3><p>When the end-of-match screen shows up, it reads whether you escaped, died or got sacrificed.</p></div>
+      </li>
+      <li>
+        <span class="n">3</span>
+        <div><h3>It resolves your Prediction</h3><p>Your Twitch Prediction gets resolved and a stats overlay updates. You keep playing.</p></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="wrap" id="mockup">
+    <h2>What the overlay could look like</h2>
+    <p class="muted">Concept mockup, not final. Numbers below are made up to show the layout.</p>
+    <div class="overlay" role="img" aria-label="Concept mockup of a stats overlay showing escape rate this stream, streak and lifetime win rate">
+      <div class="ov-head"><span>Stream stats</span><span class="tag">Concept mockup, not final</span></div>
+      <div class="ov-grid">
+        <div class="stat"><span class="v">5 / 8</span><span class="k">Escape rate this stream</span></div>
+        <div class="stat"><span class="v">3</span><span class="k">Escape streak</span></div>
+        <div class="stat"><span class="v">47%</span><span class="k">Lifetime win rate</span></div>
+      </div>
+      <div class="ov-pred"><span class="dot"></span><span>Prediction resolved: <strong>Escaped</strong></span></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="who">
+    <h2>Who it's for</h2>
+    <p>Small and mid-size Dead by Daylight streamers, especially Affiliates who run Predictions and are tired of juggling them mid-match. Viewers and mods can join the list too, so we know who's interested.</p>
+  </section>
+
+  <section class="wrap" id="faq">
+    <h2>Questions</h2>
+    <details>
+      <summary>Does it touch game files?</summary>
+      <p>No. It doesn't read game memory or touch game files. It only looks at your screen.</p>
+    </details>
+    <details>
+      <summary>Does it work without Affiliate?</summary>
+      <p>Twitch Predictions need Twitch Affiliate or Partner, so for the Prediction part, you need that. The stats overlay idea doesn't depend on Predictions.</p>
+    </details>
+    <details>
+      <summary>How much will it cost?</summary>
+      <p>The plan is a free basic tier, and a paid tier for stats history and themes. Nothing is final.</p>
+    </details>
+    <details>
+      <summary>Is it available now?</summary>
+      <p>No. It's in development, and whether we build it depends on how many people want it.</p>
+    </details>
+  </section>
+
+  <section class="wrap cta">
+    <h2>Want it?</h2>
+    <p>Tell us. It takes ten seconds.</p>
+    <a class="btn" href="#top">Join the waitlist</a>
+  </section>
+</main>
+
+<footer class="wrap foot" id="privacy">
+  <h2>Privacy</h2>
+  <p>We collect your email, plus your Twitch channel name if you give it. We use it only to contact you about this project. Page visits are counted with GoatCounter, which doesn't use cookies or track you across sites.</p>
+  <details>
+    <summary>Ask us to delete your data</summary>
+    <form id="delete-form" action="#" method="post" novalidate>
+      <label for="del-email">The email you signed up with</label>
+      <input id="del-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+      <button type="submit" class="btn ghost">Request deletion</button>
+      <p id="del-status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </details>
+  <p class="disclaimer">Not affiliated with or endorsed by Behaviour Interactive or Twitch. Dead by Daylight is a trademark of Behaviour Interactive.</p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#a31d23" stop-opacity=".55"/><stop offset="1" stop-color="#0b0b0d" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0b0d"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="120" cy="120" r="34" fill="none" stroke="#e0383e" stroke-width="9"/>
+  <circle cx="120" cy="120" r="13" fill="#e0383e"/>
+  <text x="180" y="132" font-family="Georgia,serif" font-size="40" font-weight="700" fill="#d9cdb8">Auto-Predict</text>
+  <text x="80" y="300" font-family="Georgia,serif" font-size="78" font-weight="700" fill="#ece7e1">Stop resolving your</text>
+  <text x="80" y="390" font-family="Georgia,serif" font-size="78" font-weight="700" fill="#ece7e1">Predictions by hand.</text>
+  <text x="80" y="470" font-family="Helvetica,Arial,sans-serif" font-size="34" fill="#a9a39b">A tool for Dead by Daylight streamers. In development.</text>
+  <rect x="80" y="515" width="270" height="56" rx="10" fill="#a31d23"/>
+  <text x="215" y="552" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="700" fill="#fff">Join the waitlist</text>
+</svg>
