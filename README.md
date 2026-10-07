@@ -28,8 +28,8 @@ Deletion requests use the same endpoint. They arrive with subject "DELETION REQU
 ### 3. Deploy to GitHub Pages
 1. Create a new public GitHub repo and push this branch (merge it into `main` first).
 2. Repo **Settings > Pages**, then source **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. Wait a minute for the URL `https://YOUR-USERNAME.github.io/REPO/`.
-4. In `index.html`, replace `YOUR-USERNAME/REPO` in the `og:image`, `og:url` and `twitter:image` tags with the real URL, then push again.
+3. Wait a minute for the URL. This site is live at https://imabf.github.io/dbd-auto-predict/
+4. In `index.html`, make sure the `og:image`, `og:url` and `twitter:image` tags use that real URL (already done for this deployment).
 5. Check the share preview with a link-preview tool or by pasting the URL into Discord.
 
 Nothing has been pushed or published yet.
