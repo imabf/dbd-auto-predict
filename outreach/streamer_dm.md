@@ -12,4 +12,4 @@ Hey [name], solo student dev here. Quick question for a project I'm validating: 
 
 ## Variant C: lead with the page
 
-Hi [name]! I'm a student developer working on an idea for DBD streamers: automatic Prediction resolution plus a small stats overlay (escape rate, streak). It's still just an idea, and I put up a waitlist page to see if anyone wants it: [LINK]. If you have 2 minutes to tell me honestly what you think, that'd help a lot. No worries if you're busy.
+Hi [name]! I'm a student developer working on an idea for DBD streamers: automatic Prediction resolution plus a small stats overlay (escape rate, streak). It's still just an idea, and I put up a waitlist page to see if anyone wants it: https://imabf.github.io/dbd-auto-predict/. If you have 2 minutes to tell me honestly what you think, that'd help a lot. No worries if you're busy.

@@ -12,7 +12,7 @@ The idea: a small desktop app that watches the screen like OBS does, spots the e
 
 It wouldn't read game memory or touch game files. It only looks at the picture.
 
-To be clear, it isn't built yet. I made a waitlist page to see if there's any interest: [LINK]
+To be clear, it isn't built yet. I made a waitlist page to see if there's any interest: https://imabf.github.io/dbd-auto-predict/
 
 I'd like honest answers, including "no, I wouldn't use this":
 

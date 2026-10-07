@@ -4,4 +4,4 @@
 
 **Message:**
 
-Hey everyone, I'm a student dev exploring a free tool for DBD streamers: it would watch the screen for the end-of-match result and resolve your Twitch Prediction automatically, plus show a small stats overlay (escape rate this stream, streak). It isn't built yet. I'm trying to find out if anyone would want it before I start. If you stream DBD (or mod/watch), I'd love your honest take: [LINK]. Mods, happy to remove this if it breaks the rules.
+Hey everyone, I'm a student dev exploring a free tool for DBD streamers: it would watch the screen for the end-of-match result and resolve your Twitch Prediction automatically, plus show a small stats overlay (escape rate this stream, streak). It isn't built yet. I'm trying to find out if anyone would want it before I start. If you stream DBD (or mod/watch), I'd love your honest take: https://imabf.github.io/dbd-auto-predict/. Mods, happy to remove this if it breaks the rules.
